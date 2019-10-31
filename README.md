@@ -16,4 +16,4 @@ Cloudflare has a ip list of their CDN, which can be obtained at [here](https://w
 python pingip.py
 ```
 
-You will get a log file in yout current directory.
+You will get a log file in your current directory.
