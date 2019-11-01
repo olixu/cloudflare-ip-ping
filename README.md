@@ -17,3 +17,11 @@ python pingip.py
 ```
 
 You will get a log file in your current directory.
+
+In `pingip.py` file. You could change:
+
+ - the number of threads to fit the performance of your computer and your network capacity.
+ - the THRESHOLD under which the ip and latency will be logged into the log file.
+
+ ## How to contribute this repo
+ You could open an issue and upload your log file, tell me whether this script works or not, please attach your location and your network supplier.
