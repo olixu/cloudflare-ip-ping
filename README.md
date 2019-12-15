@@ -25,3 +25,6 @@ In `pingip.py` file. You could change:
 
  ## How to contribute this repo
  You could open an issue and upload your log file, tell me whether this script works or not, please attach your location and your network supplier.
+ 
+ ## Recommend VPS
+[**CloudCone**: Deploy managed cloud services in a secure, scalable and reliable network](https://app.cloudcone.com/?ref=2272)
