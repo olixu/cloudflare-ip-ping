@@ -38,7 +38,7 @@ def ping_host(IP_QUEUE, THRESHOLD):
         res = popen.stdout.read().decode('utf-8').strip('\n')
         if "1 received" in res:
             try:
-                x = re.findall("time=... ms", res)[0]
+                x = re.findall("time=\d+ ms", res)[0]
                 x = re.findall(r"\d+", x)[0]
                 if int(x)<THRESHOLD:
                     logging.info("%s  %s %s" % (ip," Latency is: ", x))
