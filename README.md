@@ -27,4 +27,6 @@ In `pingip.py` file. You could change:
  You could open an issue and upload your log file, tell me whether this script works or not, please attach your location and your network supplier.
  
  ## Recommend VPS
-[**CloudCone**: Deploy managed cloud services in a secure, scalable and reliable network](https://app.cloudcone.com/?ref=2272)
+[**pacificrack**: High Availability Failover Cloud VPS from $5.99/mo. Linux and Windows VPS Servers with Full Root Access, DDoS Protection and more!](https://pacificrack.com/portal/aff.php?aff=1906)
+
+Benchmark of the test VPS can be find in [here](https://paste.ubuntu.com/p/vqWBcvGvQT/).
