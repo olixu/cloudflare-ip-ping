@@ -20,6 +20,7 @@ Linux系统用户可以查看仓库历史版本，这个项目一年前就是给
 
 2. 切换到项目目录
 3. 运行`python pingip.py`
+4. 运行结束后，会在目录中生成结果文件：`ping_host.log`
 
 ## Windows客户端
 
