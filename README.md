@@ -1,3 +1,8 @@
+# 博客：[Oliverxu's blog ](https://blog.oliverxu.cn)
+
+
+# [中文说明](zh_ch.md)
+
 # cloudflare-ip-ping
 Cloudflare provides a CDN service which can speed up the websites. While using the free plan, you could not choose the nodes of the CDN. However, The cloudflare partner project allows users to use cname to get their websites into the CDN, which means users can choose whichever nodes they like.
 
@@ -28,7 +33,7 @@ If you are using windows 10 x64. You can directly use the package I packed, It c
 
  ## How to contribute this repo
  You could open an issue and upload your log file, tell me whether this script works or not, please attach your location and your network supplier.
- 
+
  ## Recommend VPS
 [**pacificrack**: High Availability Failover Cloud VPS from $5.99/mo. Linux and Windows VPS Servers with Full Root Access, DDoS Protection and more!](https://pacificrack.com/portal/aff.php?aff=1906)
 
