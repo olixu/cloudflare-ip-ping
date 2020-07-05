@@ -1,7 +1,7 @@
 # 博客：[Oliverxu's blog ](https://blog.oliverxu.cn)
 
 
-# [中文说明](zh_ch.md)
+# [中文说明](zh_cn.md)
 
 # cloudflare-ip-ping
 Cloudflare provides a CDN service which can speed up the websites. While using the free plan, you could not choose the nodes of the CDN. However, The cloudflare partner project allows users to use cname to get their websites into the CDN, which means users can choose whichever nodes they like.
