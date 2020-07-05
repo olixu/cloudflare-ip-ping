@@ -62,6 +62,7 @@ def is_admin():
 if __name__ == '__main__':
     if is_admin() == False:
         print("请以管理员权限运行")
+        os.system("pause")
         sys.exit()
     # 线程数：为200时候，我本地测试179秒。
     # 不同配置和网络的电脑结果有差异。线程不是越大越好，设置成不超过300。
@@ -92,3 +93,4 @@ if __name__ == '__main__':
                 print("正在退出")
                 break
     print("总共耗时：",time.time()-now, 's')
+    os.system("pause")
