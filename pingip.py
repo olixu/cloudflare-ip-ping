@@ -46,7 +46,8 @@ def ping_host(ip):
             loss = re.findall("\d+% 丢失", res)[0]
             loss = re.findall(r"\d+", loss)[0]
             if int(latency)<THRESHOLD:
-                logging.info("{}, 延迟:{}ms, 丢包:{}%".format(ip, latency, loss))
+                #logging.info("{}, 延迟:{}ms, 丢包:{}%".format(ip, latency, loss))
+                outcomes.append((ip, int(latency), int(loss)))
         except Exception as e:
             print(e) 
     finish += 1  
@@ -73,12 +74,15 @@ if __name__ == '__main__':
     THRESHOLD = int(input("阈值(移动设置为100，电信联通设置200)范围为0-300:"))
     assert 0<THRESHOLD<300
     now = time.time()
+    # 初始化参数
     set_logging_format()
     hosts_list_path  = "./input.txt"
     ips = get_all_ips(hosts_list_path)
     total = len(ips)
     finish = 1
     finish_temp = 1
+    outcomes = []
+    # 设置线程池
     pool = ThreadPool(WORD_THREAD_NUM)
     pool.map_async(ping_host,ips)
     pool.close()
@@ -89,6 +93,13 @@ if __name__ == '__main__':
             pbar.update(finish-finish_temp)  
             finish_temp = finish
             if (total<=finish or msvcrt.kbhit()):
+                outcomes.sort(key=lambda outcome_item: (outcome_item[2], outcome_item[1]))
+                if len(outcomes)==0:
+                    logging.info("没有找到合适的IP，请调整阈值")
+                else:
+                    for i in outcomes:
+                        ip, latency, loss = i[0], i[1], i[2]
+                        logging.info("{}, 延迟:{}ms, 丢包:{}%".format(ip, latency, loss))
                 pool.terminate()
                 print("正在退出")
                 break
