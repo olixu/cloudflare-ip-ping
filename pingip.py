@@ -36,7 +36,7 @@ def get_all_ips(hosts_list_path):
 #多线程调用ping
 def ping_host(ip):
     global finish
-    popen = subprocess.Popen('ping -c 1 -w 1 %s' %ip, stdout=subprocess.PIPE,shell=True)
+    popen = subprocess.Popen('ping -w 1 %s' %ip, stdout=subprocess.PIPE,shell=True)
     popen.wait()
     res = popen.stdout.read().decode('gbk').strip('\n')
     if "平均" in res:
