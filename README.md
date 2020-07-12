@@ -35,6 +35,4 @@ If you are using windows 10 x64. You can directly use the package I packed, It c
  You could open an issue and upload your log file, tell me whether this script works or not, please attach your location and your network supplier.
 
  ## Recommend VPS
-[**pacificrack**: High Availability Failover Cloud VPS from $5.99/mo. Linux and Windows VPS Servers with Full Root Access, DDoS Protection and more!](https://pacificrack.com/portal/aff.php?aff=1906)
-
-Benchmark of the test VPS can be find in [here](https://paste.ubuntu.com/p/vqWBcvGvQT/).
+To Do
